@@ -45,3 +45,12 @@ crashlytics-build.properties
 fabric.properties
 
 /Experimental/
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/reactTemplatesPlugin.xml
+.idea/sbt.xml
+.idea/tap-notebooks.iml
+.idea/vcs.xml
+.ipynb_checkpoints/
