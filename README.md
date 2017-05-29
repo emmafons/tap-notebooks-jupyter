@@ -2,7 +2,7 @@
 
 This repo contains Jupyter and Zeppelin notebooks that use the Text Analytics Pipeline (TAP).
 
-For workshops materials, please see the [TAP notebooks wiki](wiki).
+For workshops materials, please see the [TAP notebooks wiki](../../wiki).
 
 ### License
 
