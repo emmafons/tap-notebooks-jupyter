@@ -73,7 +73,7 @@ object Tap {
   }
 
   def cleanText(text:String) = {
-    println(s"Cleaning text: $text")
+    //println(s"Cleaning text: $text")
     val response = Http(CLEAN_URL).postData(text).header("content-type", "application/json").asString
     //println(response)
     upickle.default.read[Results](response.body)
