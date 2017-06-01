@@ -1,0 +1,896 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n\n### GitHub and Jupyter\n\nEverything that you require for this workshop is available on GitHub and released under an Apache 2.0 license. We encourage you to make improvements (or add additional resources) and contribute back to the repos so that this workshop can be improved for future participants. \n\nIf you are unfamiliar with working with GitHub, then see this website for helpful tips.\n\nYou can run these notebooks yourself on your own machine by following the installation steps in the [repo\u0027s README](https://github.com/uts-cic/tap-notebooks)\n\n### Notebook basics\n\nWe are going to get straight into using this notebook. If you are not familiar with Jupyter notebooks, you can find some help under the ```help``` menu, and more detailed tutorials at these websites...\n\n   - [Jupyter documentation](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/examples_index.html)\n   - [jupyter-scala website](https://github.com/alexarchambault/jupyter-scala)\n    \nTo get started, let\u0027s try a basic hello world!\n",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:37:05 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eGitHub and Jupyter\u003c/h3\u003e\n\u003cp\u003eEverything that you require for this workshop is available on GitHub and released under an Apache 2.0 license. We encourage you to make improvements (or add additional resources) and contribute back to the repos so that this workshop can be improved for future participants. \u003c/p\u003e\n\u003cp\u003eIf you are unfamiliar with working with GitHub, then see this website for helpful tips.\u003c/p\u003e\n\u003cp\u003eYou can run these notebooks yourself on your own machine by following the installation steps in the \u003ca href\u003d\"https://github.com/uts-cic/tap-notebooks\"\u003erepo\u0026rsquo;s README\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eNotebook basics\u003c/h3\u003e\n\u003cp\u003eWe are going to get straight into using this notebook. If you are not familiar with Jupyter notebooks, you can find some help under the \u003ccode\u003ehelp\u003c/code\u003e menu, and more detailed tutorials at these websites\u0026hellip;\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/examples_index.html\"\u003eJupyter documentation\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://github.com/alexarchambault/jupyter-scala\"\u003ejupyter-scala website\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTo get started, let\u0026rsquo;s try a basic hello world!\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320509130_-250836251",
+      "id": "20170601-223509_1254386471",
+      "dateCreated": "Jun 1, 2017 10:35:09 PM",
+      "dateStarted": "Jun 1, 2017 10:37:05 PM",
+      "dateFinished": "Jun 1, 2017 10:37:08 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Let\u0027s assign a value \n// Assign \"LASI\u002717\" to myWorld by replacing the ???\n\nval myWorld \u003d \"LASI\u002717\"\n",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:37:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nmyWorld: String \u003d LASI\u002717\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320625375_-1403623866",
+      "id": "20170601-223705_51456902",
+      "dateCreated": "Jun 1, 2017 10:37:05 PM",
+      "dateStarted": "Jun 1, 2017 10:37:33 PM",
+      "dateFinished": "Jun 1, 2017 10:37:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nPressing **shift-return** will run the currently selected cell and move to the next cell. Do this in the cell above. The result should be:\n\n```\nmyWorld: String \u003d \"LASI\u002717\" \n\n```\nOnce you have this, run the cell below to show a sentence with the value included.",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:38:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003ePressing \u003cstrong\u003eshift-return\u003c/strong\u003e will run the currently selected cell and move to the next cell. Do this in the cell above. The result should be:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003emyWorld: String \u003d \u0026quot;LASI\u0026#39;17\u0026quot; \n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOnce you have this, run the cell below to show a sentence with the value included.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320652722_1622673065",
+      "id": "20170601-223732_1782790969",
+      "dateCreated": "Jun 1, 2017 10:37:32 PM",
+      "dateStarted": "Jun 1, 2017 10:38:15 PM",
+      "dateFinished": "Jun 1, 2017 10:38:15 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "s\"Hello $myWorld!\"",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:38:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres1: String \u003d Hello LASI\u002717!\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320695053_-315645921",
+      "id": "20170601-223815_1245254311",
+      "dateCreated": "Jun 1, 2017 10:38:15 PM",
+      "dateStarted": "Jun 1, 2017 10:38:58 PM",
+      "dateFinished": "Jun 1, 2017 10:38:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\nThe notebook takes code that has been run in previous cells and allows you to use it in subsequent cells. We will use this feature to step through various processes in Writing Analytics.\n\n`show()` is a function that writes to the output of the cell. However, with scala, the cell can show the output of any expression. The following takes a variable (`myWorld`) and embeds it in a string (`s\"Hello !\"`).",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:39:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThe notebook takes code that has been run in previous cells and allows you to use it in subsequent cells. We will use this feature to step through various processes in Writing Analytics.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eshow()\u003c/code\u003e is a function that writes to the output of the cell. However, with scala, the cell can show the output of any expression. The following takes a variable (\u003ccode\u003emyWorld\u003c/code\u003e) and embeds it in a string (\u003ccode\u003es\u0026quot;Hello !\u0026quot;\u003c/code\u003e).\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320737669_-976367052",
+      "id": "20170601-223857_2090271808",
+      "dateCreated": "Jun 1, 2017 10:38:57 PM",
+      "dateStarted": "Jun 1, 2017 10:39:38 PM",
+      "dateFinished": "Jun 1, 2017 10:39:38 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\nThe result is a string. Because we didn\u0027t assign it, the notebook assigned it to a result (`res1`). This is an actual value and we can work with it.",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:41:43 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {},
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThe result is a string. Because we didn\u0026rsquo;t assign it, the notebook assigned it to a result (\u003ccode\u003eres1\u003c/code\u003e). This is an actual value and we can work with it.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320777699_126570127",
+      "id": "20170601-223937_902244384",
+      "dateCreated": "Jun 1, 2017 10:39:37 PM",
+      "dateStarted": "Jun 1, 2017 10:41:28 PM",
+      "dateFinished": "Jun 1, 2017 10:41:28 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "println(res1)",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:41:11 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello LASI\u002717!\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320817092_572555399",
+      "id": "20170601-224017_1345340549",
+      "dateCreated": "Jun 1, 2017 10:40:17 PM",
+      "dateStarted": "Jun 1, 2017 10:41:11 PM",
+      "dateFinished": "Jun 1, 2017 10:41:11 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n#### Coding\n\nThe code in the notebook is run by a \u0027kernel\u0027. The name of the kernel is in the top righthand corner of the window under the logout button. For this workshop, we have scala or python notebooks. \n\nYou can pick one of a number of options to complete this workshop:\n\n1. Follow along in the scala language using the scala notebooks\n2. Follow along in the python language using the python notebooks\n3. Work in scala or python on your local machine using the notebooks as a guide\n4. Work in another language that you prefer trying the notebook exercises in your own language\n\n***Adopt the approach that is most useful for you and your work***",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:42:22 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch4\u003eCoding\u003c/h4\u003e\n\u003cp\u003eThe code in the notebook is run by a \u0026lsquo;kernel\u0026rsquo;. The name of the kernel is in the top righthand corner of the window under the logout button. For this workshop, we have scala or python notebooks. \u003c/p\u003e\n\u003cp\u003eYou can pick one of a number of options to complete this workshop:\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003eFollow along in the scala language using the scala notebooks\u003c/li\u003e\n  \u003cli\u003eFollow along in the python language using the python notebooks\u003c/li\u003e\n  \u003cli\u003eWork in scala or python on your local machine using the notebooks as a guide\u003c/li\u003e\n  \u003cli\u003eWork in another language that you prefer trying the notebook exercises in your own language\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cem\u003eAdopt the approach that is most useful for you and your work\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320871005_-1520250399",
+      "id": "20170601-224111_1107114422",
+      "dateCreated": "Jun 1, 2017 10:41:11 PM",
+      "dateStarted": "Jun 1, 2017 10:42:22 PM",
+      "dateFinished": "Jun 1, 2017 10:42:22 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### I/O\n\nFor this workshop we\u0027re going to need some basic input and output. Rather than coding this everytime we need it, we have two objects that can provide access to (a) the file system and (b) the text analytics pipeline (TAP)\n\n#### Basic file access\n\nCreate an object that will provide some basic filesystem access:\n- Hold common properties\n- Provide common file access methods",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:42:48 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {},
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eI/O\u003c/h3\u003e\n\u003cp\u003eFor this workshop we\u0026rsquo;re going to need some basic input and output. Rather than coding this everytime we need it, we have two objects that can provide access to (a) the file system and (b) the text analytics pipeline (TAP)\u003c/p\u003e\n\u003ch4\u003eBasic file access\u003c/h4\u003e\n\u003cp\u003eCreate an object that will provide some basic filesystem access:\u003cbr/\u003e- Hold common properties\u003cbr/\u003e- Provide common file access methods\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320941394_-591943248",
+      "id": "20170601-224221_1840277964",
+      "dateCreated": "Jun 1, 2017 10:42:21 PM",
+      "dateStarted": "Jun 1, 2017 10:42:42 PM",
+      "dateFinished": "Jun 1, 2017 10:42:42 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "object LocalIO {\n    import java.io.File\n    import scala.io.Source\n    \n    val IN_DIR_NAME \u003d \"/input_files\"\n    val OUT_DIR_NAME \u003d \"/output_files\"\n    \n    val thisDir \u003d new File(\".\").getCanonicalPath\n    val inputFileDir \u003d thisDir+IN_DIR_NAME\n    val outputFileDir \u003d thisDir+OUT_DIR_NAME\n    \n    val visibleFile \u003d (file:File) \u003d\u003e !file.isHidden\n    val textFile \u003d (file:File) \u003d\u003e file.getName.split(\u0027.\u0027).last.contains(\"txt\")\n    \n    def directoryFromString(directory:String):Option[File] \u003d {\n         val thisDir \u003d new File(directory)\n         if (thisDir.exists \u0026\u0026 thisDir.isDirectory) Some(thisDir)\n         else None\n    }\n    \n    def listFiles(directory:String):List[File] \u003d {\n        directoryFromString(directory) match {\n            case Some(dir) \u003d\u003e dir.listFiles.toList\n            case None \u003d\u003e List[File]()\n        }\n    }\n    \n    def listThisDir \u003d listFiles(thisDir)\n    \n    def listThisDirVisible \u003d listThisDir.filter(visibleFile)\n    \n    def listThisDirText \u003d listThisDirVisible.filter(textFile)\n    \n    def readFile(file:File) \u003d {\n        val source \u003d Source.fromFile(file.getCanonicalPath)\n        try {\n            source.getLines.mkString(\"\\n\\n\")\n        } finally {\n            source.close\n        }\n    }\n}\n",
+      "user": "user1",
+      "dateUpdated": "Jun 2, 2017 8:11:45 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndefined object LocalIO\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320962175_948637320",
+      "id": "20170601-224242_836666214",
+      "dateCreated": "Jun 1, 2017 10:42:42 PM",
+      "dateStarted": "Jun 2, 2017 7:53:40 AM",
+      "dateFinished": "Jun 2, 2017 7:53:41 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "user1",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1496355168471_-85324476",
+      "id": "20170602-081248_907210719",
+      "dateCreated": "Jun 2, 2017 8:12:48 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val directory \u003d z.input(\"directory\",\"/\").toString",
+      "user": "user1",
+      "dateUpdated": "Jun 2, 2017 8:27:15 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {
+          "directory": "/Users/andrew/"
+        },
+        "forms": {
+          "directory": {
+            "name": "directory",
+            "displayName": "directory",
+            "type": "input",
+            "defaultValue": "/",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndirectory: String \u003d /Users/andrew/\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496355056840_-1708180012",
+      "id": "20170602-081056_1988451187",
+      "dateCreated": "Jun 2, 2017 8:10:56 AM",
+      "dateStarted": "Jun 2, 2017 8:27:15 AM",
+      "dateFinished": "Jun 2, 2017 8:27:15 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Check that this object is working as expected\n\n//Get a listing of files for the entered directory\nval listing \u003d LocalIO.listFiles(directory)\n\n//We\u0027re only interested in the visible ones\nval visible \u003d listing.filter(LocalIO.visibleFile)\n\n//Now format the data so that we can save it as a table\nval tabulated \u003d visible.zipWithIndex.map{ case (a,b) \u003d\u003e b+\"\\t\"+a.getName }.mkString(\"\\n\")",
+      "user": "user1",
+      "dateUpdated": "Jun 2, 2017 8:46:54 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "listing: List[java.io.File] \u003d List(/Users/andrew/.3T, /Users/andrew/.ammonite, /Users/andrew/.atom, /Users/andrew/.aws, /Users/andrew/.bash_history, /Users/andrew/.bash_sessions, /Users/andrew/.cache, /Users/andrew/.CFUserTextEncoding, /Users/andrew/.config, /Users/andrew/.coursier, /Users/andrew/.cups, /Users/andrew/.docker, /Users/andrew/.DS_Store, /Users/andrew/.gitconfig, /Users/andrew/.gitkraken, /Users/andrew/.gradle, /Users/andrew/.idea-build, /Users/andrew/.ipynb_checkpoints, /Users/andrew/.ipython, /Users/andrew/.iterm2, /Users/andrew/.iterm2_shell_integration.bash, /Users/andrew/.ivy2, /Users/andrew/.jupyter, /Users/andrew/.jupyter-scala, /Users/andrew/.lesshst, /Users/andrew/.local, /Users/andrew/.m2, /Users/andrew/.nimble-options.json, /Users/andrew/.node-gyp, /Users/andrew/...\nvisible: List[java.io.File] \u003d List(/Users/andrew/Applications, /Users/andrew/Boostnote, /Users/andrew/CompendiumNG-log, /Users/andrew/compendiumng_config, /Users/andrew/compendiumng_data, /Users/andrew/Desktop, /Users/andrew/Documents, /Users/andrew/Downloads, /Users/andrew/GitBook, /Users/andrew/github, /Users/andrew/Library, /Users/andrew/Movies, /Users/andrew/Music, /Users/andrew/ownCloud, /Users/andrew/Pictures, /Users/andrew/Public, /Users/andrew/tap_files, /Users/andrew/zeppelin-0.7.1-bin-all)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntabulated: String \u003d\n0\tApplications\n1\tBoostnote\n2\tCompendiumNG-log\n3\tcompendiumng_config\n4\tcompendiumng_data\n5\tDesktop\n6\tDocuments\n7\tDownloads\n8\tGitBook\n9\tgithub\n10\tLibrary\n11\tMovies\n12\tMusic\n13\townCloud\n14\tPictures\n15\tPublic\n16\ttap_files\n17\tzeppelin-0.7.1-bin-all\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496320993651_810374547",
+      "id": "20170601-224313_1550523056",
+      "dateCreated": "Jun 1, 2017 10:43:13 PM",
+      "dateStarted": "Jun 2, 2017 8:46:54 AM",
+      "dateFinished": "Jun 2, 2017 8:46:55 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "user1",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1496355016436_2074424342",
+      "id": "20170602-081016_1453892691",
+      "dateCreated": "Jun 2, 2017 8:10:16 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(s\"\"\"%table idx\\tname\\n$tabulated\"\"\")",
+      "user": "user1",
+      "dateUpdated": "Jun 2, 2017 8:47:01 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "multiBarChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "name",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "idx",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "idx\tname\n0\tApplications\n1\tBoostnote\n2\tCompendiumNG-log\n3\tcompendiumng_config\n4\tcompendiumng_data\n5\tDesktop\n6\tDocuments\n7\tDownloads\n8\tGitBook\n9\tgithub\n10\tLibrary\n11\tMovies\n12\tMusic\n13\townCloud\n14\tPictures\n15\tPublic\n16\ttap_files\n17\tzeppelin-0.7.1-bin-all"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496354351680_-1612954397",
+      "id": "20170602-075911_1566490388",
+      "dateCreated": "Jun 2, 2017 7:59:11 AM",
+      "dateStarted": "Jun 2, 2017 8:47:01 AM",
+      "dateFinished": "Jun 2, 2017 8:47:01 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//What text files are available in the input directory?\nval inputTextFiles \u003d LocalIO.listFiles(LocalIO.inputFileDir).filter(LocalIO.textFile)\n\n//Open and show the first file in the input directory\nprintln(LocalIO.readFile(inputTextFiles.head))",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:44:56 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ninputTextFiles: List[java.io.File] \u003d List()\n\n\n\n\njava.util.NoSuchElementException: head of empty list\n  at scala.collection.immutable.Nil$.head(List.scala:420)\n  at scala.collection.immutable.Nil$.head(List.scala:417)\n  ... 46 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321027545_751553938",
+      "id": "20170601-224347_361947816",
+      "dateCreated": "Jun 1, 2017 10:43:47 PM",
+      "dateStarted": "Jun 1, 2017 10:44:58 PM",
+      "dateFinished": "Jun 1, 2017 10:44:59 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n#### TAP access\n\nCreate an object that will provide access to the Text Analytics Pipeline (TAP):\n- Hold common properties\n- Provide common TAP methods",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:45:23 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch4\u003eTAP access\u003c/h4\u003e\n\u003cp\u003eCreate an object that will provide access to the Text Analytics Pipeline (TAP):\u003cbr/\u003e- Hold common properties\u003cbr/\u003e- Provide common TAP methods\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321084374_-746765548",
+      "id": "20170601-224444_458792828",
+      "dateCreated": "Jun 1, 2017 10:44:44 PM",
+      "dateStarted": "Jun 1, 2017 10:45:23 PM",
+      "dateFinished": "Jun 1, 2017 10:45:23 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//For TAP access we need a couple of libraries to handle the http connection and the deserialisation of json\n//import $ivy.`org.scalaj:scalaj-http_2.11:2.3.0`\n//import $ivy.`com.lihaoyi:upickle_2.11:0.4.4`\n\nobject Tap {\n    import scalaj.http._\n    import org.json4s._\n    import org.json4s.jackson.Serialization\n    import org.json4s.jackson.Serialization.{read, write}\n    \n    implicit val formats \u003d Serialization.formats(NoTypeHints)\n    \n    \n    //val API_URL \u003d \"https://b9yiddda69.execute-api.ap-southeast-2.amazonaws.com/initialtest/v1\"\n    val API_URL \u003d \"http://localhost:8080/v1\"\n    val HEALTH_URL \u003d API_URL+\"/health\"\n    val CLEAN_URL \u003d API_URL+\"/analyse/text/clean\"\n    \n    case class Message(message:String)\n    case class Results(message:String,results:List[String])\n\n    def serverDetails \u003d Http(API_URL).asString\n\n    def getHealthMessage \u003d {\n        println(s\"Connecting to $HEALTH_URL\")\n        val response \u003d Http(HEALTH_URL).asString\n        println(response)\n        read[Message](response.body)\n    }\n\n    def serverIsHealthy \u003d {\n        try { getHealthMessage.message\u003d\u003d\"ok\" }\n        catch { case e:Exception \u003d\u003e {\n                println(s\"There was a problem with the server: $e\")\n                false }\n        }\n    }\n    \n    // def cleanText(text:String) \u003d {\n    //     println(s\"Cleaning text: $text\")\n    //     val response \u003d Http(CLEAN_URL).postData(text).asString\n    //     upickle.default.read[Results](response.body)\n    // }\n}",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:48:12 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndefined object Tap\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321122326_-1582799717",
+      "id": "20170601-224522_1857135480",
+      "dateCreated": "Jun 1, 2017 10:45:22 PM",
+      "dateStarted": "Jun 1, 2017 10:48:12 PM",
+      "dateFinished": "Jun 1, 2017 10:48:14 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Check that this object is working as expected\n\n//Try connecting to the server to check that it is up and running\nprintln(Tap.serverIsHealthy)",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:48:39 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Connecting to http://localhost:8080/v1/health\nHttpResponse({\"message\":\"ok\"},200,Map(Content-Length -\u003e Vector(16), Content-Type -\u003e Vector(application/json), Date -\u003e Vector(Thu, 01 Jun 2017 12:48:40 GMT), Server -\u003e Vector(akka-http/10.0.6), Status -\u003e Vector(HTTP/1.1 200 OK)))\ntrue\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321239208_132596415",
+      "id": "20170601-224719_593275079",
+      "dateCreated": "Jun 1, 2017 10:47:19 PM",
+      "dateStarted": "Jun 1, 2017 10:48:40 PM",
+      "dateFinished": "Jun 1, 2017 10:48:40 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Workshop approach\n\nThe workshop is intended to guide you through some of the processes involved in Writing Analytics. It is not indended to be prescriptive, but rather to provide a lot of flexibility for you to explore the ideas in ways that are most relevant to your work.\n\nIf you\u0027re inexperienced with coding, then you may just wish to stick on the path provided by the Jupyter notebooks. If you\u0027re experienced, then you may wish to explore the ideas in your own way. **Choose the best path for you.**\n\n#### Common ground\n\nRegardless of which approach you take, all of us will explore some common ground through 3 questions that we will continually revist over the course of the workshop:\n\n1. What are the pedagogical aspects?\n2. What are the computational aspects?\n3. How do we connect the pedagogical and the computational\n\nWe can think of each connection as a single Writing Analytics beam, with the aim of building an increasingly strong bridge over time from multiple beams connecting the pedagogical and the computational. \n\n",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:49:31 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eWorkshop approach\u003c/h3\u003e\n\u003cp\u003eThe workshop is intended to guide you through some of the processes involved in Writing Analytics. It is not indended to be prescriptive, but rather to provide a lot of flexibility for you to explore the ideas in ways that are most relevant to your work.\u003c/p\u003e\n\u003cp\u003eIf you\u0026rsquo;re inexperienced with coding, then you may just wish to stick on the path provided by the Jupyter notebooks. If you\u0026rsquo;re experienced, then you may wish to explore the ideas in your own way. \u003cstrong\u003eChoose the best path for you.\u003c/strong\u003e\u003c/p\u003e\n\u003ch4\u003eCommon ground\u003c/h4\u003e\n\u003cp\u003eRegardless of which approach you take, all of us will explore some common ground through 3 questions that we will continually revist over the course of the workshop:\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003eWhat are the pedagogical aspects?\u003c/li\u003e\n  \u003cli\u003eWhat are the computational aspects?\u003c/li\u003e\n  \u003cli\u003eHow do we connect the pedagogical and the computational\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eWe can think of each connection as a single Writing Analytics beam, with the aim of building an increasingly strong bridge over time from multiple beams connecting the pedagogical and the computational.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321319412_1157506188",
+      "id": "20170601-224839_1531193384",
+      "dateCreated": "Jun 1, 2017 10:48:39 PM",
+      "dateStarted": "Jun 1, 2017 10:49:31 PM",
+      "dateFinished": "Jun 1, 2017 10:49:31 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Thoughts on accuracy and precision",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:49:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {},
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eThoughts on accuracy and precision\u003c/h3\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321371180_-1277741456",
+      "id": "20170601-224931_802145924",
+      "dateCreated": "Jun 1, 2017 10:49:31 PM",
+      "dateStarted": "Jun 1, 2017 10:49:53 PM",
+      "dateFinished": "Jun 1, 2017 10:49:53 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "2+3\n\n1.9999999999 + 3.0000000001\n",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:50:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres11: Int \u003d 5\n\nres12: Double \u003d 5.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321392850_1806066951",
+      "id": "20170601-224952_33034109",
+      "dateCreated": "Jun 1, 2017 10:49:52 PM",
+      "dateStarted": "Jun 1, 2017 10:50:32 PM",
+      "dateFinished": "Jun 1, 2017 10:50:33 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n**The bald man problem:**\n\n**Learning Analytics:** When can we know that a student has actually learnt something?",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:51:18 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eThe bald man problem:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eLearning Analytics:\u003c/strong\u003e When can we know that a student has actually learnt something?\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321432414_-1109713456",
+      "id": "20170601-225032_1533773804",
+      "dateCreated": "Jun 1, 2017 10:50:32 PM",
+      "dateStarted": "Jun 1, 2017 10:51:18 PM",
+      "dateFinished": "Jun 1, 2017 10:51:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Thoughts on evaluation\n\nSo what does this mean for how we should evaluate our Writing Analytics?",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:51:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {},
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eThoughts on evaluation\u003c/h3\u003e\n\u003cp\u003eSo what does this mean for how we should evaluate our Writing Analytics?\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321478029_-252416286",
+      "id": "20170601-225118_950111147",
+      "dateCreated": "Jun 1, 2017 10:51:18 PM",
+      "dateStarted": "Jun 1, 2017 10:51:35 PM",
+      "dateFinished": "Jun 1, 2017 10:51:35 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n",
+      "user": "user2",
+      "dateUpdated": "Jun 1, 2017 10:51:34 PM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1496321494877_659285366",
+      "id": "20170601-225134_590399828",
+      "dateCreated": "Jun 1, 2017 10:51:34 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "01 Getting Started",
+  "id": "2CKEXJTU3",
+  "angularObjects": {
+    "2CGWV1MGK:shared_process": [],
+    "2CEVAN2GV:shared_process": [],
+    "2CGJUBZ7V:shared_process": [],
+    "2CFA6A5V1:shared_process": [],
+    "2CG7VTQCX:shared_process": [],
+    "2CEG2J2DN:shared_process": [],
+    "2CEHG1843:shared_process": [],
+    "2CEZJ1FFZ:shared_process": [],
+    "2CG3DREEN:shared_process": [],
+    "2CHBDJGUA:shared_process": [],
+    "2CHGWK3QR:shared_process": [],
+    "2CF1G5GT2:shared_process": [],
+    "2CEFSXDFW:shared_process": [],
+    "2CH8ZF27R:shared_process": [],
+    "2CH1RZ17X:shared_process": [],
+    "2CFKZEYRE:shared_process": [],
+    "2CH9D63SV:shared_process": [],
+    "2CE3V4W48:shared_process": [],
+    "2CGKC4T26:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
