@@ -1,8 +1,6 @@
-# TAP Notebooks
+# tap-notebooks-jupyter
 
-This repo contains Jupyter and Zeppelin notebooks that use the Text Analytics Pipeline (TAP).
-
-For workshops materials, please see the [TAP notebooks wiki](../../wiki).
+This repo contains Jupyter notebooks that use the Text Analytics Pipeline (TAP). The current version of TAP presents a GraphQL API. Some archived Jupyter notebooks in this repo call the previous version of TAP which was REST based.
 
 ### License
 
