@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uts-cic/tap-notebooks-jupyter/master)
+
 # tap-notebooks-jupyter
 
 This repo contains Jupyter notebooks that use the Text Analytics Pipeline (TAP). The current version of TAP presents a GraphQL API. Some archived Jupyter notebooks in this repo call the previous version of TAP which was REST based.
