@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uts-cic/tap-notebooks-jupyter/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uts-cic/tap-notebooks-jupyter/master/python/)
 
 # tap-notebooks-jupyter
 
